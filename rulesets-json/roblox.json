@@ -1,0 +1,17 @@
+{
+  "version": 2,
+  "rules": [
+    {
+      "domain_suffix": [
+        "rbxcdn.com",
+        "rbxinfra.net",
+        "roblox.com",
+        "robloxdev.com"
+      ],
+      "ip_cidr": [
+        "128.116.0.0/17",
+        "209.206.40.0/21"
+      ]
+    }
+  ]
+}

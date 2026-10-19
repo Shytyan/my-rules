@@ -1,0 +1,36 @@
+{
+  "version": 2,
+  "rules": [
+    {
+      "domain_suffix": [
+        "1ott.net",
+        "cbilling.biz",
+        "cbilling.in",
+        "cbilling.info",
+        "cdn-sh.com",
+        "edem.tv",
+        "fox-tv.fun",
+        "fox-tv.top",
+        "glanz-tv.com",
+        "glanz.tv",
+        "gomel-sat.bz",
+        "i-edem.tv",
+        "iedem.tv",
+        "ilook.tv",
+        "ilooktv.com",
+        "ott-cdn.me",
+        "ottclub.cc",
+        "ottclub.tv",
+        "ottglanz.tv",
+        "sh24.one",
+        "shara-tv.com",
+        "sharavoz.click",
+        "sharavoz.pro",
+        "sharavoz.tv",
+        "vip-tv.pro",
+        "viplime.fun",
+        "viplime.org"
+      ]
+    }
+  ]
+}
