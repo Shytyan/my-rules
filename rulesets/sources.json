@@ -308,14 +308,6 @@
         }
       ]
     },
-    "russia_inside": {
-      "sources": [
-        {
-          "url": "https://raw.githubusercontent.com/itdoginfo/allow-domains/main/Russia/inside-raw.lst",
-          "format": "plain"
-        }
-      ]
-    },
     "soundcloud": {
       "sources": [
         {

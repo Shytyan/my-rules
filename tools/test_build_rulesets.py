@@ -192,7 +192,7 @@ class RealManifest(unittest.TestCase):
         with open(path, encoding="utf-8") as f:
             m = json.load(f)
         tags = m["tags"]
-        self.assertEqual(len(tags), 26)
+        self.assertEqual(len(tags), 25)
         for tag, spec in tags.items():
             for s in spec.get("sources", []):
                 self.assertIn(s["format"], br.PARSERS, tag)
