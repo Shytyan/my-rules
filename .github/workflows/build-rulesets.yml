@@ -1,0 +1,66 @@
+# Daily rebuild of community rulesets for podkop (Xray edition).
+# Repository layout (Shytyan/my-rules): rulesets/sources.json, tools/build_rulesets.py,
+# tools/test_build_rulesets.py -> output rulesets-json/<tag>.json (committed to main).
+# Routers download https://raw.githubusercontent.com/Shytyan/my-rules/main/rulesets-json/<tag>.json
+name: Build rulesets
+
+on:
+  schedule:
+    - cron: "17 3 * * *"
+  workflow_dispatch:
+    inputs:
+      force:
+        description: "Skip the ±50% size-change guard"
+        type: boolean
+        default: false
+  push:
+    branches: [main]
+    paths:
+      - rulesets/sources.json
+      - tools/build_rulesets.py
+
+permissions:
+  contents: write
+
+concurrency:
+  group: build-rulesets
+  cancel-in-progress: false
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Unit tests
+        run: python -m unittest tools/test_build_rulesets.py -v
+
+      - name: Build
+        id: build
+        continue-on-error: true
+        run: |
+          python tools/build_rulesets.py --manifest rulesets/sources.json --out rulesets-json \
+            ${{ github.event.inputs.force == 'true' && '--force' || '' }}
+
+      # Tags that built fine are published even when another tag's source is broken
+      - name: Commit changes
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add rulesets-json
+          if git diff --cached --quiet; then
+            echo "No changes"
+          else
+            git commit -m "rulesets: update $(date -u +%Y-%m-%d)"
+            git push
+          fi
+
+      - name: Fail on broken sources
+        if: steps.build.outcome == 'failure'
+        run: |
+          echo "::error::Some rulesets were not rebuilt (see the Build step log); previous files were kept"
+          exit 1

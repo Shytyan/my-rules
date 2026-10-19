@@ -1,0 +1,409 @@
+{
+  "comment": "Sources of community rulesets; built by tools/build_rulesets.py. v1 tags mirror itdoginfo/allow-domains; v2 tags = v2fly domain-list-community + manual additions (add).",
+  "tags": {
+    "ai": {
+      "sources": [
+        {
+          "url": "https://raw.githubusercontent.com/v2fly/domain-list-community/master/data/category-ai-!cn",
+          "format": "v2fly"
+        }
+      ],
+      "add": {}
+    },
+    "anime": {
+      "sources": [
+        {
+          "url": "https://raw.githubusercontent.com/itdoginfo/allow-domains/main/Categories/anime.lst",
+          "format": "plain"
+        }
+      ]
+    },
+    "block": {
+      "sources": [
+        {
+          "url": "https://raw.githubusercontent.com/itdoginfo/allow-domains/main/Categories/block.lst",
+          "format": "plain"
+        }
+      ]
+    },
+    "discord": {
+      "sources": [
+        {
+          "url": "https://raw.githubusercontent.com/itdoginfo/allow-domains/main/Services/discord.lst",
+          "format": "plain"
+        }
+      ]
+    },
+    "geoblock": {
+      "sources": [
+        {
+          "url": "https://raw.githubusercontent.com/itdoginfo/allow-domains/main/Categories/geoblock.lst",
+          "format": "plain"
+        }
+      ]
+    },
+    "google": {
+      "sources": [
+        {
+          "url": "https://raw.githubusercontent.com/v2fly/domain-list-community/master/data/google",
+          "format": "v2fly"
+        }
+      ],
+      "add": {}
+    },
+    "hdrezka": {
+      "sources": [
+        {
+          "url": "https://raw.githubusercontent.com/itdoginfo/allow-domains/main/Services/hdrezka.lst",
+          "format": "plain"
+        }
+      ]
+    },
+    "hodca": {
+      "sources": [
+        {
+          "url": "https://raw.githubusercontent.com/itdoginfo/allow-domains/main/Categories/hodca.lst",
+          "format": "plain"
+        }
+      ]
+    },
+    "iptv": {
+      "sources": [],
+      "add": {
+        "domain_suffix": [
+          "1ott.net",
+          "cbilling.biz",
+          "cbilling.in",
+          "cbilling.info",
+          "cdn-sh.com",
+          "edem.tv",
+          "fox-tv.fun",
+          "fox-tv.top",
+          "glanz-tv.com",
+          "glanz.tv",
+          "gomel-sat.bz",
+          "i-edem.tv",
+          "iedem.tv",
+          "ilook.tv",
+          "ilooktv.com",
+          "ott-cdn.me",
+          "ottclub.cc",
+          "ottclub.tv",
+          "ottglanz.tv",
+          "sh24.one",
+          "shara-tv.com",
+          "sharavoz.click",
+          "sharavoz.pro",
+          "sharavoz.tv",
+          "vip-tv.pro",
+          "viplime.fun",
+          "viplime.org"
+        ]
+      }
+    },
+    "meta": {
+      "sources": [
+        {
+          "url": "https://raw.githubusercontent.com/itdoginfo/allow-domains/main/Services/meta.lst",
+          "format": "plain"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/itdoginfo/allow-domains/main/Subnets/IPv4/meta.lst",
+          "format": "plain"
+        }
+      ]
+    },
+    "netflix": {
+      "sources": [
+        {
+          "url": "https://raw.githubusercontent.com/v2fly/domain-list-community/master/data/netflix",
+          "format": "v2fly"
+        }
+      ],
+      "add": {}
+    },
+    "news": {
+      "sources": [
+        {
+          "url": "https://raw.githubusercontent.com/itdoginfo/allow-domains/main/Categories/news.lst",
+          "format": "plain"
+        }
+      ]
+    },
+    "playstation": {
+      "sources": [
+        {
+          "url": "https://raw.githubusercontent.com/v2fly/domain-list-community/master/data/playstation",
+          "format": "v2fly"
+        }
+      ],
+      "add": {
+        "domain_suffix": [
+          "ginzasonypark.jp",
+          "imageworks.com",
+          "motionpictureser.com",
+          "nuro.jp",
+          "playshow.io",
+          "playshowtv.com",
+          "scea.com",
+          "so-net.ne.jp",
+          "so-net.net.tw",
+          "sony",
+          "sony-africa.com",
+          "sony-asia.com",
+          "sony-europe.com",
+          "sony-hes.co.jp",
+          "sony-latin.com",
+          "sony-mea.com",
+          "sony-olympus-medical.com",
+          "sony-promotion.eu",
+          "sony-semicon.co.jp",
+          "sony-semicon.com",
+          "sony.at",
+          "sony.ba",
+          "sony.be",
+          "sony.bg",
+          "sony.biz",
+          "sony.ca",
+          "sony.ch",
+          "sony.cl",
+          "sony.co.cr",
+          "sony.co.id",
+          "sony.co.in",
+          "sony.co.jp",
+          "sony.co.kr",
+          "sony.co.nz",
+          "sony.co.th",
+          "sony.co.uk",
+          "sony.com",
+          "sony.com.ar",
+          "sony.com.au",
+          "sony.com.bo",
+          "sony.com.br",
+          "sony.com.co",
+          "sony.com.do",
+          "sony.com.ec",
+          "sony.com.gt",
+          "sony.com.hk",
+          "sony.com.hn",
+          "sony.com.mk",
+          "sony.com.mx",
+          "sony.com.my",
+          "sony.com.ni",
+          "sony.com.pa",
+          "sony.com.pe",
+          "sony.com.ph",
+          "sony.com.py",
+          "sony.com.sg",
+          "sony.com.sv",
+          "sony.com.tr",
+          "sony.com.tw",
+          "sony.com.vn",
+          "sony.cz",
+          "sony.de",
+          "sony.dk",
+          "sony.ee",
+          "sony.es",
+          "sony.eu",
+          "sony.fi",
+          "sony.fr",
+          "sony.gr",
+          "sony.hr",
+          "sony.hu",
+          "sony.ie",
+          "sony.it",
+          "sony.kz",
+          "sony.lt",
+          "sony.lu",
+          "sony.lv",
+          "sony.net",
+          "sony.nl",
+          "sony.no",
+          "sony.pl",
+          "sony.pt",
+          "sony.ro",
+          "sony.rs",
+          "sony.ru",
+          "sony.se",
+          "sony.si",
+          "sony.sk",
+          "sony.ua",
+          "sonybo.co.jp",
+          "sonybsc.com",
+          "sonybuilding.jp",
+          "sonyclassics.com",
+          "sonydesign.com",
+          "sonydna.com",
+          "sonyglobalsolutions.jp",
+          "sonyinteractive.com",
+          "sonykigyo.jp",
+          "sonylatvija.com",
+          "sonymusic.com.hk",
+          "sonynetwork.co.jp",
+          "sonypcl.jp",
+          "sonypictures.com",
+          "sonypicturesanimation.com",
+          "sonypicturesmuseum.com",
+          "sonypicturesstudios.com",
+          "sonypicturestelevision.com",
+          "sonypicturestelevisiongames.com",
+          "sonyprotechnosupport.co.jp",
+          "sonystoragemedia.co.jp",
+          "sonytc.co.jp",
+          "sovec.net",
+          "wheelpop.com",
+          "wwtbam.com",
+          "yourfantasybeginsnow.com"
+        ]
+      }
+    },
+    "porn": {
+      "sources": [
+        {
+          "url": "https://raw.githubusercontent.com/itdoginfo/allow-domains/main/Categories/porn.lst",
+          "format": "plain"
+        }
+      ]
+    },
+    "riotgames": {
+      "sources": [
+        {
+          "url": "https://raw.githubusercontent.com/v2fly/domain-list-community/master/data/riot",
+          "format": "v2fly"
+        }
+      ],
+      "add": {
+        "domain_suffix": [
+          "vivox.com"
+        ],
+        "ip_cidr": [
+          "103.219.128.0/22",
+          "103.240.224.0/22",
+          "104.160.128.0/19",
+          "138.0.12.0/22",
+          "151.106.246.0/23",
+          "151.106.248.0/22",
+          "151.106.252.0/23",
+          "151.106.254.0/24",
+          "162.249.72.0/21",
+          "185.40.64.0/22",
+          "192.207.0.0/24",
+          "192.64.168.0/21",
+          "192.91.144.0/24",
+          "43.229.64.0/22",
+          "45.250.208.0/22",
+          "45.7.36.0/22"
+        ]
+      }
+    },
+    "roblox": {
+      "sources": [
+        {
+          "url": "https://raw.githubusercontent.com/itdoginfo/allow-domains/main/Services/roblox.lst",
+          "format": "plain"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/itdoginfo/allow-domains/main/Subnets/IPv4/roblox.lst",
+          "format": "plain"
+        }
+      ]
+    },
+    "russia_inside": {
+      "sources": [
+        {
+          "url": "https://raw.githubusercontent.com/itdoginfo/allow-domains/main/Russia/inside-raw.lst",
+          "format": "plain"
+        }
+      ]
+    },
+    "soundcloud": {
+      "sources": [
+        {
+          "url": "https://raw.githubusercontent.com/v2fly/domain-list-community/master/data/soundcloud",
+          "format": "v2fly"
+        }
+      ],
+      "add": {}
+    },
+    "spotify": {
+      "sources": [
+        {
+          "url": "https://raw.githubusercontent.com/v2fly/domain-list-community/master/data/spotify",
+          "format": "v2fly"
+        }
+      ],
+      "add": {}
+    },
+    "steam": {
+      "sources": [
+        {
+          "url": "https://raw.githubusercontent.com/v2fly/domain-list-community/master/data/steam",
+          "format": "v2fly"
+        }
+      ],
+      "add": {}
+    },
+    "telegram": {
+      "sources": [
+        {
+          "url": "https://raw.githubusercontent.com/itdoginfo/allow-domains/main/Services/telegram.lst",
+          "format": "plain"
+        }
+      ]
+    },
+    "tiktok": {
+      "sources": [
+        {
+          "url": "https://raw.githubusercontent.com/itdoginfo/allow-domains/main/Services/tiktok.lst",
+          "format": "plain"
+        }
+      ]
+    },
+    "twitch": {
+      "sources": [
+        {
+          "url": "https://raw.githubusercontent.com/v2fly/domain-list-community/master/data/twitch",
+          "format": "v2fly"
+        }
+      ],
+      "add": {}
+    },
+    "twitter": {
+      "sources": [
+        {
+          "url": "https://raw.githubusercontent.com/itdoginfo/allow-domains/main/Services/twitter.lst",
+          "format": "plain"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/itdoginfo/allow-domains/main/Subnets/IPv4/twitter.lst",
+          "format": "plain"
+        }
+      ]
+    },
+    "xbox": {
+      "sources": [
+        {
+          "url": "https://raw.githubusercontent.com/v2fly/domain-list-community/master/data/xbox",
+          "format": "v2fly"
+        }
+      ],
+      "add": {
+        "domain_suffix": [
+          "asobostudio.com",
+          "flightsimulator.com"
+        ],
+        "domain": [
+          "flightsimulator.azureedge.net"
+        ]
+      }
+    },
+    "youtube": {
+      "sources": [
+        {
+          "url": "https://raw.githubusercontent.com/itdoginfo/allow-domains/main/Services/youtube.lst",
+          "format": "plain"
+        }
+      ]
+    }
+  }
+}
