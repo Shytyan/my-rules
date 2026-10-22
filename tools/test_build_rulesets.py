@@ -29,6 +29,13 @@ class ParsePlain(unittest.TestCase):
         self.assertEqual(e["ip_cidr"], {"203.0.113.0/24", "198.51.100.7/32"})
         self.assertEqual(e.invalid, 1)
 
+    def test_ipv6_subnets(self):
+        # core.telegram.org/resources/cidr.txt mixes IPv4 and IPv6
+        e = br.parse_plain("91.108.56.0/22\n2001:b28:f23d::/48\n2a0a:f280::/32\n2001:DB8::1\n")
+        self.assertEqual(e["ip_cidr"], {"91.108.56.0/22", "2001:b28:f23d::/48", "2a0a:f280::/32", "2001:db8::1/128"})
+        self.assertEqual(e["domain_suffix"], set())
+        self.assertEqual(e.invalid, 0)
+
     def test_single_label_suffix_allowed(self):
         self.assertEqual(br.parse_plain("ua\n")["domain_suffix"], {"ua"})
 
@@ -199,6 +206,16 @@ class RealManifest(unittest.TestCase):
                 self.assertTrue(s["url"].startswith("https://"), tag)
             self.assertTrue(spec.get("sources") or spec.get("add"), tag)
             br.validate_entries(tag, br.entries_from_dict(spec.get("add", {})))
+
+    def test_ip_based_services_have_subnets(self):
+        # Telegram/Discord voice/Meet connect by IP, so a domain-only ruleset is not enough
+        path = os.path.join(os.path.dirname(os.path.abspath(__file__)), "..", "rulesets", "sources.json")
+        with open(path, encoding="utf-8") as f:
+            tags = json.load(f)["tags"]
+        for tag in ("telegram", "discord", "google", "meta", "twitter", "roblox"):
+            urls = [s["url"] for s in tags[tag]["sources"]]
+            self.assertTrue(any("/Subnets/" in u for u in urls), tag)
+        self.assertIn("https://core.telegram.org/resources/cidr.txt", [s["url"] for s in tags["telegram"]["sources"]])
 
 
 if __name__ == "__main__":

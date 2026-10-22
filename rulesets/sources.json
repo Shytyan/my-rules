@@ -31,6 +31,10 @@
         {
           "url": "https://raw.githubusercontent.com/itdoginfo/allow-domains/main/Services/discord.lst",
           "format": "plain"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/itdoginfo/allow-domains/main/Subnets/IPv4/discord.lst",
+          "format": "plain"
         }
       ]
     },
@@ -47,6 +51,10 @@
         {
           "url": "https://raw.githubusercontent.com/v2fly/domain-list-community/master/data/google",
           "format": "v2fly"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/itdoginfo/allow-domains/main/Subnets/IPv4/google_meet.lst",
+          "format": "plain"
         }
       ],
       "add": {}
@@ -339,6 +347,14 @@
       "sources": [
         {
           "url": "https://raw.githubusercontent.com/itdoginfo/allow-domains/main/Services/telegram.lst",
+          "format": "plain"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/itdoginfo/allow-domains/main/Subnets/IPv4/telegram.lst",
+          "format": "plain"
+        },
+        {
+          "url": "https://core.telegram.org/resources/cidr.txt",
           "format": "plain"
         }
       ]
