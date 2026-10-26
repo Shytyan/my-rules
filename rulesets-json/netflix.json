@@ -6,6 +6,7 @@
         "fast.com",
         "netflix.ca",
         "netflix.com",
+        "netflix.com.edgesuite.net",
         "netflix.net",
         "netflixdnstest0.com",
         "netflixdnstest1.com",
@@ -26,9 +27,6 @@
         "nflxsearch.net",
         "nflxso.net",
         "nflxvideo.net"
-      ],
-      "domain": [
-        "netflix.com.edgesuite.net"
       ],
       "domain_regex": [
         "(^|\\.)apiproxy-device-prod-nlb-.+\\.amazonaws\\.com$",
