@@ -18,6 +18,19 @@
         }
       ]
     },
+    "apple": {
+      "sources": [
+        {
+          "url": "https://raw.githubusercontent.com/v2fly/domain-list-community/master/data/apple",
+          "format": "v2fly"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/v2fly/domain-list-community/master/data/apple-intelligence",
+          "format": "v2fly"
+        }
+      ],
+      "add": {}
+    },
     "block": {
       "sources": [
         {
