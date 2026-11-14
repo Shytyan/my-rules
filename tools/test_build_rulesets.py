@@ -199,7 +199,7 @@ class RealManifest(unittest.TestCase):
         with open(path, encoding="utf-8") as f:
             m = json.load(f)
         tags = m["tags"]
-        self.assertEqual(len(tags), 26)
+        self.assertEqual(len(tags), 27)
         # Apple: v2fly "apple" (App Store, iCloud, Music, TV+, updates...) + Apple Intelligence, left out of "apple"
         apple = [s["url"] for s in tags["apple"]["sources"]]
         self.assertIn("https://raw.githubusercontent.com/v2fly/domain-list-community/master/data/apple", apple)

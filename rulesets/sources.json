@@ -425,6 +425,71 @@
           "format": "plain"
         }
       ]
+    },
+    "russia": {
+      "sources": [
+        {
+          "url": "https://raw.githubusercontent.com/v2fly/domain-list-community/master/data/category-ru",
+          "format": "v2fly"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/v2fly/domain-list-community/master/data/category-gov-ru",
+          "format": "v2fly"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/itdoginfo/allow-domains/main/Russia/outside-raw.lst",
+          "format": "plain"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/ipverse/rir-ip/master/country/ru/ipv4-aggregated.txt",
+          "format": "plain"
+        }
+      ],
+      "add": {
+        "domain_suffix": [
+          "2gis.com",
+          "avito.st",
+          "habr.com",
+          "ivi.tv",
+          "moscow",
+          "mradx.net",
+          "mycdn.me",
+          "okko.tv",
+          "ozonusercontent.com",
+          "premier.one",
+          "qiwi.com",
+          "ru",
+          "sberbank.com",
+          "su",
+          "tass.com",
+          "tatar",
+          "tochka.com",
+          "userapi.com",
+          "vk-portal.net",
+          "vk.cc",
+          "vk.com",
+          "vk.company",
+          "vk.link",
+          "vk.me",
+          "vkuser.net",
+          "vkuseraudio.net",
+          "vkuservideo.net",
+          "wbstatic.net",
+          "xn--80adxhks",
+          "xn--d1acj3b",
+          "xn--p1ai",
+          "yandex.cloud",
+          "yandex.com",
+          "yandex.net",
+          "yandexadexchange.net",
+          "yandexcloud.net",
+          "yandexwebcache.net",
+          "yastatic.net"
+        ]
+      },
+      "remove": [
+        "2gis.com.cy"
+      ]
     }
   }
 }
